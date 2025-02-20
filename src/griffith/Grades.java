@@ -15,6 +15,6 @@ public class Grades {
     }
 
     public int countFails(int[] grades, int minGrade) {
-        return 0; // Placeholder return value
+        return 0; // Placeholder return valu
     }
-}
+}   

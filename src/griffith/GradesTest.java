@@ -21,7 +21,7 @@ class GradesTest {
     }
 
     @Test
-    void testCountFails() {
+    void testCountFails() { 
         // Test cases will be added here
     }
 }
