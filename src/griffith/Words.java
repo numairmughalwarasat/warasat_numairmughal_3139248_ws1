@@ -4,7 +4,11 @@ public class Words {
 
     private char[] letters;
 
+    // Constructor to initialize the letters attribute
     public Words(char[] letters) {
+        if (letters == null) {
+            throw new IllegalArgumentException("letters cannot be null");
+        }
         this.letters = letters;
     }
 
@@ -20,12 +24,13 @@ public class Words {
 
     // Method to return the length of the word
     public int length() {
-        return letters.length;
+        return letters.length; // Return the length of the array
     }
 
     // Method to return the letters of the word
     public char[] getLetters() {
-        return letters;
+        return letters; // Return the letters array
     }
 }
+
 
