@@ -30,4 +30,16 @@ public class Calculator {
         int total = gradesTotal(grades);
         return (double) total / grades.length;
     }
+
+    // Method to count the number of failing grades (below the minimum grade)
+    public int countFails(int[] grades, int minGrade) {
+        if (grades == null) throw new NullPointerException();
+        int failCount = 0;
+        for (int grade : grades) {
+            if (grade < minGrade) {
+                failCount++;
+            }
+        }
+        return failCount;
+    }
 }
