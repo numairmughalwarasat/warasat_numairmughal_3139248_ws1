@@ -2,7 +2,7 @@ package griffith;
 
 public class Calculator {
 
-    // Method to return the maximum grad
+    // Method to return the maximum grade
     public int gradesMax(int[] grades) {
         if (grades == null) throw new NullPointerException();
         int max = grades[0];
@@ -12,5 +12,15 @@ public class Calculator {
             }
         }
         return max;
+    }
+
+    // Method to return the total sum of grades
+    public int gradesTotal(int[] grades) {
+        if (grades == null) throw new NullPointerException();
+        int total = 0;
+        for (int grade : grades) {
+            total += grade;
+        }
+        return total;
     }
 }
