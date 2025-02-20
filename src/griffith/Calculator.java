@@ -23,4 +23,11 @@ public class Calculator {
         }
         return total;
     }
+
+    // Method to return the average of grades
+    public double gradesAverage(int[] grades) {
+        if (grades == null) throw new NullPointerException();
+        int total = gradesTotal(grades);
+        return (double) total / grades.length;
+    }
 }
